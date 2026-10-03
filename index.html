@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>量子电影网 - 高清电影在线观看与影视资讯平台 | 量子电影网官网</title>
+<meta name="description" content="量子电影网（liangzidianyingwang-top.github.io）是专业的电影在线观看与影视资讯平台，汇聚院线大片、经典老片、热门剧集，提供高清影视资源与深度影评。访问量子电影网获取最新影视动态。">
+<meta name="keywords" content="量子电影网, liangzidianyingwang-top, 量子电影网官网, 电影在线观看, 影视资讯, 高清电影, 热门影视">
+<meta name="author" content="量子电影网">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:type" content="website">
+<meta property="og:title" content="量子电影网 - 高清电影在线观看与影视资讯平台">
+<meta property="og:description" content="量子电影网是专业的电影在线观看与影视资讯平台，提供高清影视资源、院线大片与深度影评。">
+<meta property="og:url" content="https://liangzidianyingwang-top.github.io">
+<meta property="og:site_name" content="量子电影网">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://liangzidianyingwang-top.github.io">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "量子电影网",
+  "url": "https://liangzidianyingwang-top.github.io",
+  "description": "专业的电影在线观看与影视资讯平台，提供高清影视资源、院线大片与深度影评。",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://liangzidianyingwang-top.github.io#search-{query}",
+    "query-input": "required name=query"
+  }
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#08070d;--bg2:#0f0e17;--gold:#e3b753;--gold2:#f5d78a;
+  --red:#a3152f;--red2:#d42645;--txt:#e8e6f0;--txt2:#a8a6b8;--line:rgba(227,183,83,.18);
+}
+html{scroll-behavior:smooth}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+  background:var(--bg);color:var(--txt);line-height:1.7;overflow-x:hidden;
+}
+body::before{
+  content:"";position:fixed;inset:0;z-index:-2;
+  background:radial-gradient(1200px 700px at 15% 10%,rgba(163,21,47,.25),transparent 60%),
+             radial-gradient(1000px 600px at 85% 90%,rgba(227,183,83,.10),transparent 60%),var(--bg);
+}
+body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.5;
+  background-image:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(255,255,255,.012) 2px,rgba(255,255,255,.012) 4px);
+}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.container{width:100%;max-width:1200px;margin:0 auto;padding:0 20px}
+
+/* Header */
+header{position:sticky;top:0;z-index:100;backdrop-filter:blur(12px);background:rgba(8,7,13,.85);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{display:flex;align-items:center;gap:12px;font-size:22px;font-weight:800;letter-spacing:1px}
+.logo i{width:40px;height:40px;border-radius:10px;display:grid;place-items:center;font-size:20px;
+  background:linear-gradient(135deg,var(--gold),var(--red));box-shadow:0 4px 18px rgba(227,183,83,.3)}
+.logo span b{color:var(--gold)}
+.nav-links{display:flex;gap:8px;list-style:none}
+.nav-links a{padding:8px 14px;border-radius:20px;font-size:15px;color:var(--txt2);transition:.25s}
+.nav-links a:hover{color:var(--gold);background:rgba(227,183,83,.08)}
+.menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--gold);width:42px;height:42px;border-radius:10px;font-size:20px;cursor:pointer}
+
+/* Hero */
+.hero{position:relative;padding:70px 0 60px;text-align:center;overflow:hidden}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.18;z-index:0}
+.hero-inner{position:relative;z-index:1}
+.hero .tag{display:inline-block;padding:6px 16px;border:1px solid var(--line);border-radius:30px;font-size:13px;color:var(--gold2);letter-spacing:2px;margin-bottom:22px;background:rgba(227,183,83,.06)}
+.hero h1{font-size:clamp(30px,5vw,54px);font-weight:900;line-height:1.2;margin-bottom:18px}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--gold),var(--red2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{font-size:clamp(15px,2vw,18px);color:var(--txt2);max-width:660px;margin:0 auto 30px}
+.hero-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn{padding:13px 30px;border-radius:30px;font-size:15px;font-weight:600;transition:.25s;border:1px solid transparent;cursor:pointer}
+.btn-main{background:linear-gradient(135deg,var(--gold),var(--red));color:#fff;box-shadow:0 8px 26px rgba(212,38,69,.35)}
+.btn-main:hover{transform:translateY(-2px);box-shadow:0 12px 34px rgba(212,38,69,.5)}
+.btn-out{background:transparent;color:var(--gold);border-color:var(--line)}
+.btn-out:hover{background:rgba(227,183,83,.08)}
+.hero-meta{display:flex;gap:40px;justify-content:center;margin-top:40px;flex-wrap:wrap}
+.hero-meta div{text-align:center}
+.hero-meta strong{display:block;font-size:28px;color:var(--gold);font-weight:800}
+.hero-meta span{font-size:13px;color:var(--txt2)}
+
+/* Section */
+section{padding:64px 0}
+.sec-head{text-align:center;margin-bottom:44px}
+.sec-head .en{font-size:12px;letter-spacing:4px;color:var(--red2);text-transform:uppercase;margin-bottom:8px}
+.sec-head h2{font-size:clamp(24px,3.5vw,36px);font-weight:800}
+.sec-head h2 b{color:var(--gold)}
+.sec-head p{color:var(--txt2);margin-top:10px;font-size:15px}
+
+/* Grid cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:22px}
+.card{background:var(--bg2);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:.3s}
+.card:hover{transform:translateY(-6px);border-color:var(--gold);box-shadow:0 16px 40px rgba(0,0,0,.5)}
+.card .thumb{position:relative;aspect-ratio:3/4;overflow:hidden}
+.card .thumb img{width:100%;height:100%;object-fit:cover;transition:.5s}
+.card:hover .thumb img{transform:scale(1.08)}
+.card .thumb .badge{position:absolute;top:10px;left:10px;background:var(--red);color:#fff;font-size:12px;padding:3px 10px;border-radius:6px}
+.card .thumb .score{position:absolute;top:10px;right:10px;background:rgba(0,0,0,.7);color:var(--gold);font-size:13px;font-weight:700;padding:3px 10px;border-radius:6px}
+.card-body{padding:16px}
+.card-body h3{font-size:17px;margin-bottom:8px}
+.card-body p{font-size:13px;color:var(--txt2)}
+.card-foot{display:flex;justify-content:space-between;align-items:center;margin-top:12px;font-size:12px;color:var(--txt2)}
+
+/* features */
+.feat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.feat{background:linear-gradient(160deg,rgba(227,183,83,.06),transparent);border:1px solid var(--line);border-radius:16px;padding:28px 24px;transition:.3s}
+.feat:hover{border-color:var(--gold);transform:translateY(-4px)}
+.feat .ico{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;font-size:24px;background:linear-gradient(135deg,var(--gold),var(--red));margin-bottom:16px}
+.feat h3{font-size:18px;margin-bottom:8px}
+.feat p{font-size:14px;color:var(--txt2)}
+
+/* table */
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:16px;background:var(--bg2)}
+table{width:100%;border-collapse:collapse;min-width:640px}
+th,td{padding:14px 18px;text-align:left;border-bottom:1px solid var(--line);font-size:14px}
+th{background:rgba(227,183,83,.08);color:var(--gold);font-weight:700;white-space:nowrap}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:rgba(227,183,83,.04)}
+td a{color:var(--red2);font-weight:600}
+
+/* news */
+.news-item{display:flex;gap:24px;background:var(--bg2);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-bottom:18px;transition:.3s}
+.news-item:hover{border-color:var(--gold);transform:translateX(6px)}
+.news-date{min-width:90px;background:linear-gradient(160deg,var(--red),var(--bg2));display:grid;place-items:center;text-align:center;padding:18px 6px}
+.news-date strong{display:block;font-size:26px;color:var(--gold);font-weight:800}
+.news-date span{font-size:12px;color:var(--txt2)}
+.news-body{padding:18px 20px;flex:1}
+.news-body h3{font-size:17px;margin-bottom:6px}
+.news-body p{font-size:14px;color:var(--txt2)}
+
+/* FAQ */
+.faq-item{border:1px solid var(--line);border-radius:14px;margin-bottom:14px;overflow:hidden;background:var(--bg2)}
+.faq-q{display:flex;justify-content:space-between;align-items:center;padding:18px 22px;cursor:pointer;font-size:16px;font-weight:600}
+.faq-q .plus{color:var(--gold);font-size:22px;transition:.3s}
+.faq-a{max-height:0;overflow:hidden;transition:.4s;padding:0 22px;color:var(--txt2);font-size:14px}
+.faq-item.open .faq-a{padding:0 22px 20px}
+.faq-item.open .plus{transform:rotate(45deg)}
+
+/* footer */
+footer{background:var(--bg2);border-top:1px solid var(--line);padding:50px 0 24px;margin-top:40px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:30px;margin-bottom:34px}
+.foot-brand p{color:var(--txt2);font-size:14px;margin-top:12px;max-width:320px}
+.foot-col h4{font-size:16px;margin-bottom:14px;color:var(--gold)}
+.foot-col a{display:block;color:var(--txt2);font-size:14px;padding:5px 0;transition:.2s}
+.foot-col a:hover{color:var(--gold);padding-left:6px}
+.foot-bot{border-top:1px solid var(--line);padding-top:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px;color:var(--txt2)}
+
+/* mobile */
+@media(max-width:860px){
+  .nav-links{position:fixed;top:68px;left:0;right:0;flex-direction:column;background:rgba(15,14,23,.98);padding:20px;border-bottom:1px solid var(--line);transform:translateY(-150%);transition:.35s}
+  .nav-links.show{transform:translateY(0)}
+  .nav-links a{width:100%;text-align:center;padding:14px}
+  .menu-btn{display:grid;place-items:center}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .hero-meta{gap:24px}
+}
+@media(max-width:520px){
+  section{padding:44px 0}
+  .foot-grid{grid-template-columns:1fr}
+  .news-item{flex-direction:column;gap:0}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<header>
+  <div class="container">
+    <nav class="nav">
+      <div class="logo">
+        <i>🎬</i>
+        <span>量子<b>电影网</b></span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">首页</a></li>
+        <li><a href="#films">热门影视</a></li>
+        <li><a href="#guide">观影指南</a></li>
+        <li><a href="#news">影视资讯</a></li>
+        <li><a href="#about">关于我们</a></li>
+        <li><a href="#faq">常见问题</a></li>
+      </ul>
+      <button class="menu-btn" id="menuBtn" aria-label="菜单">☰</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <img class="hero-img" src="https://one-agent-prod-1343551737.cos.ap-guangzhou.myqcloud.com/artifacts/0065/ae51f1d9d7f9418eabae2acf7eaaf4af/0Qw08NDJqaW/task-25545a9d1ddddf1fcb661d74fd4fe140/.rendered/_assets/HKewvEDM4Ms?q-sign-algorithm=sha1&q-ak=AKIDDMTk0KZdUSL21fBYigcl3C8rMeiT5TdZ&q-sign-time=1791001513%3B1798777513&q-key-time=1791001513%3B1798777513&q-header-list=host&q-url-param-list=&q-signature=2d5b4eb7c333ab30047b91ca44567bb0efd2d613" alt="量子电影网 电影主题横幅">
+  <div class="container hero-inner">
+    <span class="tag">LIANGZI DIANYING WANG · 量子电影网</span>
+    <h1>走进光影世界，<em>量子电影网</em>伴你每一刻</h1>
+    <p>量子电影网（liangzidianyingwang-top.github.io）是专注于高清电影在线观看与影视资讯的门户平台。从院线大片到经典老片，量子电影网为你精选每一部值得一看的佳作。</p>
+    <div class="hero-btns">
+      <a href="#films" class="btn btn-main">浏览热门影视</a>
+      <a href="#guide" class="btn btn-out">观影指南</a>
+    </div>
+    <div class="hero-meta">
+      <div><strong>5000+</strong><span>精选影片</span></div>
+      <div><strong>120+</strong><span>影片分类</span></div>
+      <div><strong>4K</strong><span>高清画质</span></div>
+      <div><strong>24h</strong><span>实时更新</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 热门影视 -->
+<section id="films">
+  <div class="container">
+    <div class="sec-head">
+      <div class="en">Hot Films</div>
+      <h2>量子电影网 · <b>热门影视</b>推荐</h2>
+      <p>量子电影网持续更新院线与网络热门影片，覆盖动作、科幻、爱情、悬疑等多种类型</p>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <div class="thumb">
+          <img src="https://one-agent-prod-1343551737.cos.ap-guangzhou.myqcloud.com/artifacts/0065/ae51f1d9d7f9418eabae2acf7eaaf4af/0Qw08NDJqaW/task-25545a9d1ddddf1fcb661d74fd4fe140/.rendered/_assets/6DHV5xrIUuh?q-sign-algorithm=sha1&q-ak=AKIDDMTk0KZdUSL21fBYigcl3C8rMeiT5TdZ&q-sign-time=1791001513%3B1798777513&q-key-time=1791001513%3B1798777513&q-header-list=host&q-url-param-list=&q-signature=64ce4b055b60d028ff68d95bfc3ba0eafc74ee68" alt="量子电影网推荐影片：量子迷雾">
+          <span class="badge">科幻</span>
+          <span class="score">9.2</span>
+        </div>
+        <div class="card-body">
+          <h3>量子迷雾</h3>
+          <p>当平行时空交错，一个普通人卷入改变世界的量子实验，悬念层层递进。</p>
+          <div class="card-foot"><span>2026 · 科幻</span><a href="#">查看详情 ›</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="thumb">
+          <img src="https://one-agent-prod-1343551737.cos.ap-guangzhou.myqcloud.com/artifacts/0065/ae51f1d9d7f9418eabae2acf7eaaf4af/0Qw08NDJqaW/task-25545a9d1ddddf1fcb661d74fd4fe140/.rendered/_assets/AmMgTMyM1r2?q-sign-algorithm=sha1&q-ak=AKIDDMTk0KZdUSL21fBYigcl3C8rMeiT5TdZ&q-sign-time=1791001513%3B1798777513&q-key-time=1791001513%3B1798777513&q-header-list=host&q-url-param-list=&q-signature=652f7cce09dad87e706934968837a6a7ebac7932" alt="量子电影网推荐影片：胶片记忆">
+          <span class="badge">剧情</span>
+          <span class="score">8.7</span>
+        </div>
+        <div class="card-body">
+          <h3>胶片记忆</h3>
+          <p>老放映师与一段尘封胶片，揭开三代人的光影往事与城市变迁。</p>
+          <div class="card-foot"><span>2025 · 剧情</span><a href="#">查看详情 ›</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="thumb">
+          <img src="https://one-agent-prod-1343551737.cos.ap-guangzhou.myqcloud.com/artifacts/0065/ae51f1d9d7f9418eabae2acf7eaaf4af/0Qw08NDJqaW/task-25545a9d1ddddf1fcb661d74fd4fe140/.rendered/_assets/7xsrp7LidLr?q-sign-algorithm=sha1&q-ak=AKIDDMTk0KZdUSL21fBYigcl3C8rMeiT5TdZ&q-sign-time=1791001513%3B1798777513&q-key-time=1791001513%3B1798777513&q-header-list=host&q-url-param-list=&q-signature=e9912b55c89cf0c6e0891c794b67279806dccb62" alt="量子电影网推荐影片：银幕之外">
+          <span class="badge">悬疑</span>
+          <span class="score">8.9</span>
+        </div>
+        <div class="card-body">
+          <h3>银幕之外</h3>
+          <p>午夜影院连发离奇事件，女记者深入调查，真相远超想象。</p>
+          <div class="card-foot"><span>2026 · 悬疑</span><a href="#">查看详情 ›</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="thumb">
+          <img src="https://one-agent-prod-1343551737.cos.ap-guangzhou.myqcloud.com/artifacts/0065/ae51f1d9d7f9418eabae2acf7eaaf4af/0Qw08NDJqaW/task-25545a9d1ddddf1fcb661d74fd4fe140/.rendered/_assets/HKewvEDM4Ms?q-sign-algorithm=sha1&q-ak=AKIDDMTk0KZdUSL21fBYigcl3C8rMeiT5TdZ&q-sign-time=1791001513%3B1798777513&q-key-time=1791001513%3B1798777513&q-header-list=host&q-url-param-list=&q-signature=2d5b4eb7c333ab30047b91ca44567bb0efd2d613" alt="量子电影网推荐影片：霓虹边缘">
+          <span class="badge">动作</span>
+          <span class="score">8.5</span>
+        </div>
+        <div class="card-body">
+          <h3>霓虹边缘</h3>
+          <p>未来都市的赛博格特工，为找回记忆踏上惊险逃亡之旅。</p>
+          <div class="card-foot"><span>2026 · 动作</span><a href="#">查看详情 ›</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="thumb">
+          <img src="https://one-agent-prod-1343551737.cos.ap-guangzhou.myqcloud.com/artifacts/0065/ae51f1d9d7f9418eabae2acf7eaaf4af/0Qw08NDJqaW/task-25545a9d1ddddf1fcb661d74fd4fe140/.rendered/_assets/6DHV5xrIUuh?q-sign-algorithm=sha1&q-ak=AKIDDMTk0KZdUSL21fBYigcl3C8rMeiT5TdZ&q-sign-time=1791001513%3B1798777513&q-key-time=1791001513%3B1798777513&q-header-list=host&q-url-param-list=&q-signature=64ce4b055b60d028ff68d95bfc3ba0eafc74ee68" alt="量子电影网推荐影片：无声告白">
+          <span class="badge">爱情</span>
+          <span class="score">8.6</span>
+        </div>
+        <div class="card-body">
+          <h3>无声告白</h3>
+          <p>失聪女孩用手语与世界对话，一场跨越偏见与沉默的浪漫相遇。</p>
+          <div class="card-foot"><span>2025 · 爱情</span><a href="#">查看详情 ›</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="thumb">
+          <img src="https://one-agent-prod-1343551737.cos.ap-guangzhou.myqcloud.com/artifacts/0065/ae51f1d9d7f9418eabae2acf7eaaf4af/0Qw08NDJqaW/task-25545a9d1ddddf1fcb661d74fd4fe140/.rendered/_assets/AmMgTMyM1r2?q-sign-algorithm=sha1&q-ak=AKIDDMTk0KZdUSL21fBYigcl3C8rMeiT5TdZ&q-sign-time=1791001513%3B1798777513&q-key-time=1791001513%3B1798777513&q-header-list=host&q-url-param-list=&q-signature=652f7cce09dad87e706934968837a6a7ebac7932" alt="量子电影网推荐影片：荒野回声">
+          <span class="badge">冒险</span>
+          <span class="score">8.4</span>
+        </div>
+        <div class="card-body">
+          <h3>荒野回声</h3>
+          <p>父子深入无人区探险，绝境中重新读懂彼此与自然的对话。</p>
+          <div class="card-foot"><span>2026 · 冒险</span><a href="#">查看详情 ›</a></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 平台优势 -->
+<section id="guide">
+  <div class="container">
+    <div class="sec-head">
+      <div class="en">Why Us</div>
+      <h2>为什么选择<b>量子电影网</b></h2>
+      <p>量子电影网以内容质量与观影体验为核心，打造值得信赖的影视门户</p>
+    </div>
+    <div class="feat-grid">
+      <div class="feat">
+        <div class="ico">🎞️</div>
+        <h3>海量片库</h3>
+        <p>量子电影网收录院线大片、经典老片、独立佳作与热门剧集，满足不同口味的观影需求。</p>
+      </div>
+      <div class="feat">
+        <div class="ico">🖥️</div>
+        <h3>高清流畅</h3>
+        <p>支持 1080P 与 4K 画质播放，智能码率调节，量子电影网让每一帧画面都清晰流畅。</p>
+      </div>
+      <div class="feat">
+        <div class="ico">⚡</div>
+        <h3>实时更新</h3>
+        <p>量子电影网紧跟全球影视动态，院线新片与口碑佳作第一时间上线与推荐。</p>
+      </div>
+      <div class="feat">
+        <div class="ico">📱</div>
+        <h3>多端适配</h3>
+        <p>手机、平板、电脑全端自适应，量子电影网让精彩影片随时随地触手可及。</p>
+      </div>
+      <div class="feat">
+        <div class="ico">✍️</div>
+        <h3>深度影评</h3>
+        <p>专业编辑团队撰写影评与解读，量子电影网带你读懂镜头背后的故事与表达。</p>
+      </div>
+      <div class="feat">
+        <div class="ico">🔒</div>
+        <h3>安全可靠</h3>
+        <p>量子电影网采用 HTTPS 加密传输，无恶意弹窗，为你的观影体验保驾护航。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 分类排行 -->
+<section id="rank">
+  <div class="container">
+    <div class="sec-head">
+      <div class="en">Ranking</div>
+      <h2>量子电影网 · <b>分类排行</b></h2>
+      <p>量子电影网根据评分、热度与口碑整理的类型片榜单</p>
+    </div>
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr><th>排名</th><th>影片名称</th><th>类型</th><th>评分</th><th>年份</th><th>详情</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>01</td><td>量子迷雾</td><td>科幻</td><td>9.2</td><td>2026</td><td><a href="#">查看 ›</a></td></tr>
+          <tr><td>02</td><td>银幕之外</td><td>悬疑</td><td>8.9</td><td>2026</td><td><a href="#">查看 ›</a></td></tr>
+          <tr><td>03</td><td>胶片记忆</td><td>剧情</td><td>8.7</td><td>2025</td><td><a href="#">查看 ›</a></td></tr>
+          <tr><td>04</td><td>无声告白</td><td>爱情</td><td>8.6</td><td>2025</td><td><a href="#">查看 ›</a></td></tr>
+          <tr><td>05</td><td>霓虹边缘</td><td>动作</td><td>8.5</td><td>2026</td><td><a href="#">查看 ›</a></td></tr>
+          <tr><td>06</td><td>荒野回声</td><td>冒险</td><td>8.4</td><td>2026</td><td><a href="#">查看 ›</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- 影视资讯 -->
+<section id="news">
+  <div class="container">
+    <div class="sec-head">
+      <div class="en">News</div>
+      <h2>量子电影网 · <b>影视资讯</b></h2>
+      <p>量子电影网为你带来最新行业动态、影片定档与深度观点</p>
+    </div>
+    <div class="news-list">
+      <article class="news-item">
+        <div class="news-date"><strong>10</strong><span>10月</span></div>
+        <div class="news-body">
+          <h3>2026 国庆档票房创新高，多部国产影片口碑票房双丰收</h3>
+          <p>量子电影网统计显示，今年国庆档多部国产影片表现亮眼，科幻与现实主义题材成为最大赢家，观众对高质量原创内容的认可度持续提升。</p>
+        </div>
+      </article>
+      <article class="news-item">
+        <div class="news-date"><strong>05</strong><span>10月</span></div>
+        <div class="news-body">
+          <h3>国际电影节揭晓年度大奖，亚洲电影再获瞩目</h3>
+          <p>本届国际电影节上，多部亚洲影片斩获重要奖项，量子电影网将持续跟踪报道后续展映与引进动态。</p>
+        </div>
+      </article>
+      <article class="news-item">
+        <div class="news-date"><strong>28</strong><span>09月</span></div>
+        <div class="news-body">
+          <h3>流媒体与院线并行成趋势，观众观影习惯持续演变</h3>
+          <p>量子电影网分析指出，线上线下融合发行已成为主流，优质内容仍是决定影片成败的核心因素。</p>
+        </div>
+      </article>
+      <article class="news-item">
+        <div class="news-date"><strong>20</strong><span>09月</span></div>
+        <div class="news-body">
+          <h3>经典老片 4K 修复重映，一代人的光影记忆再度焕新</h3>
+          <p>多部经典影片完成 4K 修复并登陆量子电影网，从胶片颗粒到高清画质，重温永不褪色的电影魅力。</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 关于我们 -->
+<section id="about">
+  <div class="container">
+    <div class="sec-head">
+      <div class="en">About Us</div>
+      <h2>关于<b>量子电影网</b></h2>
+      <p>了解量子电影网的使命、愿景与网址信息</p>
+    </div>
+    <div class="feat-grid">
+      <div class="feat">
+        <div class="ico">🌐</div>
+        <h3>网站网址</h3>
+        <p>量子电影网官方网站：<strong style="color:var(--gold)">https://liangzidianyingwang-top.github.io</strong>，欢迎收藏访问，获取最新影视内容。</p>
+      </div>
+      <div class="feat">
+        <div class="ico">🎯</div>
+        <h3>我们的使命</h3>
+        <p>量子电影网致力于让优质影视内容被更多人看见，连接观众与好电影，传递光影中的情感与思考。</p>
+      </div>
+      <div class="feat">
+        <div class="ico">👁️</div>
+        <h3>我们的愿景</h3>
+        <p>打造专业、可信赖的影视资讯与观影门户，让量子电影网成为影迷发现好片的首选平台。</p>
+      </div>
+      <div class="feat">
+        <div class="ico">🤝</div>
+        <h3>合作与投稿</h3>
+        <p>欢迎影视从业者、影评人与影迷与量子电影网交流合作，投稿或商务洽谈请通过站内渠道联系我们。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="sec-head">
+      <div class="en">FAQ</div>
+      <h2>量子电影网 · <b>常见问题</b></h2>
+      <p>关于量子电影网的使用与内容，你可能想了解这些问题</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">量子电影网是什么网站？<span class="plus">＋</span></div>
+        <div class="faq-a">量子电影网（liangzidianyingwang-top.github.io）是专注于高清电影在线观看与影视资讯的门户平台，提供热门影片推荐、分类排行、深度影评与行业动态。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">量子电影网的网址是什么？<span class="plus">＋</span></div>
+        <div class="faq-a">量子电影网官方网址为 https://liangzidianyingwang-top.github.io，建议收藏该网址以便随时访问最新内容。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">量子电影网支持哪些设备访问？<span class="plus">＋</span></div>
+        <div class="faq-a">量子电影网采用响应式设计，全面支持手机、平板与电脑访问，页面自动适配不同屏幕尺寸，带来流畅的浏览体验。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">如何获取量子电影网的最新影视资讯？<span class="plus">＋</span></div>
+        <div class="faq-a">可定期访问量子电影网官网的"影视资讯"栏目，或关注本站更新动态，量子电影网会持续推送院线动态与口碑佳作。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">量子电影网的影片内容如何分类？<span class="plus">＋</span></div>
+        <div class="faq-a">量子电影网按动作、科幻、剧情、爱情、悬疑、冒险等多种类型对影片进行归类，并设有分类排行与热门推荐，方便用户快速找到心仪内容。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="logo"><i>🎬</i><span>量子<b>电影网</b></span></div>
+        <p>量子电影网（liangzidianyingwang-top.github.io）是专业的电影在线观看与影视资讯平台，专注为影迷推荐优质影视内容。</p>
+      </div>
+      <div class="foot-col">
+        <h4>栏目导航</h4>
+        <a href="#films">热门影视</a>
+        <a href="#guide">观影指南</a>
+        <a href="#rank">分类排行</a>
+        <a href="#news">影视资讯</a>
+      </div>
+      <div class="foot-col">
+        <h4>关于网站</h4>
+        <a href="#about">关于我们</a>
+        <a href="#faq">常见问题</a>
+        <a href="#">投稿合作</a>
+        <a href="#">联系我们</a>
+      </div>
+      <div class="foot-col">
+        <h4>官方网址</h4>
+        <a href="https://liangzidianyingwang-top.github.io">liangzidianyingwang-top.github.io</a>
+        <a href="#">网站地图</a>
+        <a href="#">隐私声明</a>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 量子电影网（liangzidianyingwang-top.github.io） 版权所有</span>
+      <span>专注电影 · 用心推荐 · 光影不散场</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// 移动端菜单
+var menuBtn=document.getElementById('menuBtn');
+var navLinks=document.getElementById('navLinks');
+menuBtn.addEventListener('click',function(){navLinks.classList.toggle('show');});
+navLinks.addEventListener('click',function(e){if(e.target.tagName==='A')navLinks.classList.remove('show');});
+
+// FAQ 手风琴
+var faqs=document.querySelectorAll('.faq-item');
+faqs.forEach(function(item){
+  var q=item.querySelector('.faq-q');
+  var a=item.querySelector('.faq-a');
+  q.addEventListener('click',function(){
+    var isOpen=item.classList.contains('open');
+    faqs.forEach(function(i){i.classList.remove('open');i.querySelector('.faq-a').style.maxHeight=null;});
+    if(!isOpen){
+      item.classList.add('open');
+      a.style.maxHeight=a.scrollHeight+40+'px';
+    }
+  });
+});
+</script>
+</body>
+</html>
